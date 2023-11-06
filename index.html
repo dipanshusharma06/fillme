@@ -6,35 +6,38 @@
     <meta property="og:name" content="Fillme">
     <meta property="og:description" content="student form">
     <meta property="og:locale" content="en_IN">
+
+    <link rel="stylesheet" href="style.css">
     <title>Fillme</title>
 </head>
 <body>
-    <form method="post">
-        <div>
+    <div class="container">
+    <form method="get">
+        <div class="form-element">
             <label for="first_name">First Name</label>
-            <input type="text" id="first_name" value="" placeholder="Enter your first name" required>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
         </div>
-        <div>
+        <div class="form-element">
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" value="" placeholder="Enter your last name" required>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
         </div>
-        <div>
+        <div class="form-element">
             <label for="date_of_birth">DOB</label>
-            <input type="date" id="date_of_birth" required>
+            <input type="date" id="date_of_birth" name="date_of_birth" required>
         </div>
-        <div>
+        <div class="form-element">
             <label for="password">Password</label>
-            <input type="password" value="" id="password" placeholder="Enter your password" required>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
         </div>
-        <div>
+        <div class="form-element">
             <label for="confirm_password">Confirm Password</label>
-            <input type="password" value="" id="confirm_password" placeholder="Enter your password again" required>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Enter your password again" required>
         </div>
-        <div>
+        <div class="form-element">
             <label for="email_id">Email</label>
-            <input type="email" name="" id="email_id" placeholder="Enter your email">
+            <input type="email" name="email_id" id="email_id" placeholder="Enter your email">
         </div>
-        <div>
+        <div class="form-element">
             <fieldset>
                 <legend>Gender</legend>
 
@@ -46,9 +49,9 @@
                 <label for="female">Female</label>
             </fieldset>
         </div>
-        <div>
+        <div class="form-element">
             <label for="city-select">Select your city</label>
-            <input list="city" id="city-select">
+            <input list="city" id="city-select" name="city">
             <datalist id="city">
                 <option value="Ahmedabad"></option>
                 <option value="Vadodara"></option>
@@ -60,5 +63,6 @@
         </div>
         <input type="submit" value="submit" >
     </form>
+    </div>
 </body>
 </html>

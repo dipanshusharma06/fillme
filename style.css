@@ -1,0 +1,35 @@
+body{
+    margin: 2rem;
+    text-align: center;
+}
+
+.container{
+    display: inline-block;
+    margin-top: 10rem;
+    border: 3px solid black;
+    scale: 1.3;
+}
+
+fieldset{
+    display: inline;
+}
+
+.form-element{
+    margin: 0.7rem;
+    text-align: start;
+}
+
+input:invalid{
+    background-color: aquamarine;
+    border: none;
+    outline: 2px solid red;
+}
+
+input[type=submit]{
+    margin: 1rem;
+    scale: 1.2;
+    background: maroon;
+    color: azure;
+    border-radius: 15%;
+    padding: 2% 6%;
+}
